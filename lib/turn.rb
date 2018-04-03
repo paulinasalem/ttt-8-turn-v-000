@@ -38,5 +38,11 @@ def turn(board)
 index = input_to_index(input)
   if valid_move?(board, index)
     puts move(board, index, value='X')
+  else
+    counter = 0
+until counter == 20
+  puts move(board, index, value='X')
+  counter += 1
+end
 end
 end
