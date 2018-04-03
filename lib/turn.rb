@@ -40,9 +40,6 @@ index = input_to_index(input)
     puts display_board(board)
   else
     puts "Please enter 1-9:"
-until valid_move?(board, index)
-  puts move(board, index, value='X')
-  counter += 1
-end
+turn(board)
 end
 end
